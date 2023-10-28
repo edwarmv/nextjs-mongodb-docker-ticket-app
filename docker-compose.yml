@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json
+version: '3.1'
+services:
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: edwar
+      MONGO_INITDB_ROOT_PASSWORD: pass
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_AUTH_USERNAME: edwar
+      ME_CONFIG_MONGODB_AUTH_PASSWORD: pass
+      ME_CONFIG_MONGODB_URL: mongodb://edwar:pass@mongo:27017
