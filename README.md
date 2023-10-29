@@ -1,16 +1,20 @@
-## Captures
+## Ticket App
 
-### Desktop
-
-![Capture from desktop](/captures/desktop.png)
-
-### Mobile
-
-![Capture from mobile](/captures/mobile.png)
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Hello, this is an app create try Next.js and Docker.
 
 ## Getting Started
+
+Requirementes:
+- Docker
+
+The docker-compose.yml include an image of mongo and mongo-express(DB manager)
+
+```bash
+docker-componse up
+```
+
+Open [http://localhost:8081](http://localhost:8081) to see `Mongo Express` the default credentials are `edwar` and `pass`
+
 
 First, run the development server:
 
@@ -24,21 +28,18 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Captures
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Desktop
 
-## Learn More
+![Capture from desktop](/captures/desktop.png)
 
-To learn more about Next.js, take a look at the following resources:
+### Mobile
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Capture from mobile](/captures/mobile.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Thanks
 
-## Deploy on Vercel
+Thanks to ClarityCoders [Youtube channel](https://www.youtube.com/@ClarityCoders) and freeCodeCamp.org
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Youtube course video](https://youtu.be/H0vhkoXljq0)
